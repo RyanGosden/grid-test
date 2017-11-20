@@ -16,26 +16,38 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/layout.css">
-    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/outer-grid.css">
+    <link rel="stylesheet" href="styles/inner-grid.css">
     <!-- endbuild -->
 
   </head>
   <body>
 
-    <div class="sw-layout">
-    <div class="sw-takeover-left"></div>
-    <div class="sw-takeover-right"></div>
-    <div class="sw-content">
-
-      <div class="sw-grid">
-        <div class="sw-grid-inner sw-grid-header">Header</div>
-        <div class="sw-grid-inner sw-grid-banner">Grid Span</div>
-        <div class="sw-grid-inner">1</div>
-        <div class="sw-grid-footer">Footer</div>
-    </div>
-
-    </div>
+    <div class="sw-outer-grid">
+      <div class="sw-header">Header</div>
+      <div class="sw-takeover-left">TL</div>
+      <div class="sw-takeover-right">TR</div>
+      <div class="sw-content">
+        <div class="sw-inner-grid">
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+          <div class="temp">block</div>
+        </div>
+      </div>
+      <div class="sw-footer">Footer</div>
   </div>
 
     <!-- build:js scripts/vendor.js -->

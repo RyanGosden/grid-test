@@ -1,0 +1,66 @@
+/* 0 - 767px */
+.sw-outer-grid{
+ display:grid;
+ width:100%;
+ margin: 0 auto;
+ grid-gap: 0;
+ grid-template-columns: 100%;
+ grid-template-areas: "H"
+ 											"C"
+											"F";
+}
+
+.sw-header {
+	grid-area: H;
+	background-color:red;
+	max-width:1260px;
+  min-height:10vh;
+}
+
+.sw-content {
+	grid-area: C;
+	background-color: green;
+	max-width:1260px;
+  min-height:80vh;
+}
+
+.sw-footer {
+	grid-area: F;
+	background-color: blue;
+	max-width:1260px;
+  min-height:10vh;
+}
+
+.sw-takeover-left {
+	background-color:yellow;
+	grid-area: TL;
+	display: none;
+}
+
+.sw-takeover-right {
+ background-color:yellow;
+ grid-area: TR;
+ display: none;
+}
+
+ /*Show Takeovers when more than 1260px or greater */
+ @media only screen and (min-width: 1260px) {
+    .sw-outer-grid{
+			grid-template-columns: auto 1260px auto;
+			grid-template-areas: "TL H TR"
+ 		 											 "TL C TR"
+ 													 "TL F TR";
+  	}
+		.sw-takeover-left {
+			background-color:yellow;
+			grid-area: TL;
+			display: block;
+		}
+
+		.sw-takeover-right {
+		 background-color:yellow;
+		 grid-area: TR;
+		 display: block;
+		}
+
+}
