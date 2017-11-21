@@ -5,42 +5,41 @@
   display:grid;
   grid-template-columns:repeat(4, 72px);
   grid-gap: 10px;
+  min-height:80vh;
   /*grid-template-areas: "c c c c";*/
-  background-color:purple;
+  background-color: lightgrey;
   width: 320px;
   margin: 0 auto;
 }
 
-/* 767px - 1023px */
- @media only screen and (min-width: 48em) {
-
- .sw-inner-grid{
-  grid-template-columns:repeat(8, 60px);
-  grid-gap: 20px;
-  width:620px;
+.temp{
+  background-color:grey;
 }
 
 
+/* 767px - 1023px */
+ @media only screen and (min-width: 48em) {
+   .sw-inner-grid{
+    grid-template-columns:repeat(8, 60px);
+    grid-gap: 20px;
+    width:620px;
+  }
 }
 
 /* 1023px - 1440px */
  @media only screen and (min-width: 64em) {
-
    .sw-inner-grid{
     grid-template-columns:repeat(12, 60px);
     grid-gap: 20px;
     width:940px;
   }
-
 }
 
 /* 1440px or greater */
  @media only screen and (min-width: 90em) {
-
    .sw-inner-grid{
     grid-template-columns:repeat(16, 60px);
     grid-gap: 20px;
     width:1260px;
   }
-
 }

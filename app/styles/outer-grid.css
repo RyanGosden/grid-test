@@ -1,7 +1,7 @@
 /* 0 - 767px */
 .sw-outer-grid{
  display:grid;
- width:100%;
+ min-width:320px;
  margin: 0 auto;
  grid-gap: 0;
  grid-template-columns: 100%;
@@ -12,33 +12,33 @@
 
 .sw-header {
 	grid-area: H;
-	background-color:red;
+	background-color:#616161;
 	max-width:1260px;
   min-height:10vh;
 }
 
 .sw-content {
 	grid-area: C;
-	background-color: green;
+	background-color: lightgrey;;
 	max-width:1260px;
   min-height:80vh;
 }
 
 .sw-footer {
 	grid-area: F;
-	background-color: blue;
+	background-color: #616161;
 	max-width:1260px;
   min-height:10vh;
 }
 
 .sw-takeover-left {
-	background-color:yellow;
+	background-color:#f58663;
 	grid-area: TL;
 	display: none;
 }
 
 .sw-takeover-right {
- background-color:yellow;
+ background-color:#f58663;
  grid-area: TR;
  display: none;
 }
@@ -52,14 +52,10 @@
  													 "TL F TR";
   	}
 		.sw-takeover-left {
-			background-color:yellow;
-			grid-area: TL;
 			display: block;
 		}
 
 		.sw-takeover-right {
-		 background-color:yellow;
-		 grid-area: TR;
 		 display: block;
 		}
 
